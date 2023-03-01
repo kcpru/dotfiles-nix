@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./waybar.nix
     ./bashrc.nix
     ./zsh.nix
     ./git.nix
@@ -20,6 +21,7 @@
     "steam"
     "steam-runtime"
     "steam-original"
+    "slack"
   ];
 
   fonts.fontconfig.enable = true;
@@ -106,6 +108,7 @@
         (ps: with ps; [
           pip
           ipython
+          fonttools
         ])
       )
     ];

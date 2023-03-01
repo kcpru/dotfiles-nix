@@ -26,13 +26,13 @@
       vimPlugins.coc-pairs
       vimPlugins.coc-prettier
       vimPlugins.coc-markdownlint
-      unstable.vimPlugins.nerdtree
-      unstable.vimPlugins.nerdcommenter
-      unstable.vimPlugins.nerdtree-git-plugin
-      unstable.vimPlugins.vim-nerdtree-syntax-highlight
-      unstable.vimPlugins.vim-snippets
-      unstable.vimPlugins.vim-commentary
-      unstable.vimPlugins.undotree
+      vimPlugins.nerdtree
+      vimPlugins.nerdcommenter
+      vimPlugins.nerdtree-git-plugin
+      vimPlugins.vim-nerdtree-syntax-highlight
+      vimPlugins.vim-snippets
+      vimPlugins.vim-commentary
+      vimPlugins.undotree
     ];
     extraConfig = ''
       "set shell=sh

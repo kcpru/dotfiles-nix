@@ -9,7 +9,7 @@
         "~/.cache/wal/colors-alacritty.yml"
       ];
       font = {
-        family = "FiraCode Nerd Font";
+        family = "Operator Mono Lig";
       };
       window = {
         opacity = 0.85;
