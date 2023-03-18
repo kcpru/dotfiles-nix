@@ -109,27 +109,38 @@
           pip
           ipython
           fonttools
+          # (buildPythonPackage {
+          #   pname = "pywalfox";
+          #   version = "2.7.4";
+          #   src = fetchPypi {
+          #     pname = "pywalfox";
+          #     version = "2.7.4";
+          #     sha256 = "Wec9fic4lXT7gBY04D2EcfCb/gYoZcrYA/aMRWaA7WY=";
+          #   };
+          # })
         ])
       )
     ];
   };
+  stylix.image = "./wallpaper.png"
 
-  programs = {
-    home-manager.enable = true;
-    gpg.enable = true;
-    fzf.enable = true;
-    jq.enable = true;
-    command-not-found.enable = true;
-    dircolors.enable = true;
-    info.enable = true;
-    exa.enable = true;
-    bat.enable = true;
+  programs =
+    {
+      home-manager.enable = true;
+      gpg.enable = true;
+      fzf.enable = true;
+      jq.enable = true;
+      command-not-found.enable = true;
+      dircolors.enable = true;
+      info.enable = true;
+      exa.enable = true;
+      bat.enable = true;
 
-    direnv = {
-      enable = true;
-      nix-direnv = { enable = true; };
+      direnv = {
+        enable = true;
+        nix-direnv = { enable = true; };
+      };
     };
-  };
 
   services = {
     lorri.enable = true;
