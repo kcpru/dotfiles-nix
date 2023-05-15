@@ -2,7 +2,7 @@
 
 {
   programs.git = {
-    enable = true;
+    enable = false;
     lfs.enable = true;
     userName = "Kacper Ślusarczyk";
     userEmail = "kacperuczyk@gmail.com";

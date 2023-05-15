@@ -11,6 +11,8 @@
     ./alacritty.nix
     ./kitty.nix
     ./picom.nix
+    ./dunst.nix
+    ./spicetify-overlay.nix
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
@@ -22,11 +24,15 @@
     "steam-runtime"
     "steam-original"
     "slack"
+    "vscode-with-extensions"
   ];
 
   fonts.fontconfig.enable = true;
 
   home = {
+    stateVersion = "22.11";
+    username = "kcpru";
+    homeDirectory = "/home/kcpru";
     packages = with pkgs; [
       # Others
       asciinema
@@ -69,7 +75,8 @@
 
       # Media
       vlc
-      spotify
+      spotify-custom
+      spicetify-cli
       obs-studio
       flameshot
 
@@ -122,7 +129,6 @@
       )
     ];
   };
-  stylix.image = "./wallpaper.png"
 
   programs =
     {
