@@ -76,7 +76,6 @@
       vlc
       obs-studio
       flameshot
-      spotify
 
       # Games
       steam
