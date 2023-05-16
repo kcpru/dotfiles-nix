@@ -12,19 +12,18 @@
     ./kitty.nix
     ./picom.nix
     ./dunst.nix
-    ./spicetify-overlay.nix
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "vscode"
     "discord"
-    "spotify-unwrapped"
     "spotify"
     "steam"
     "steam-runtime"
     "steam-original"
     "slack"
     "vscode-with-extensions"
+    "vscode-extension-ms-vscode-cpptools"
   ];
 
   fonts.fontconfig.enable = true;
@@ -75,10 +74,9 @@
 
       # Media
       vlc
-      spotify-custom
-      spicetify-cli
       obs-studio
       flameshot
+      spotify
 
       # Games
       steam
@@ -112,7 +110,8 @@
 
       # Python
       (python3.withPackages
-        (ps: with ps; [
+        (ps: with ps;
+        [
           pip
           ipython
           fonttools
