@@ -31,6 +31,7 @@
     zplug = {
       enable = true;
       plugins = [
+        { name = "jeffreytse/zsh-vi-mode"; }
         { name = "zsh-users/zsh-syntax-highlighting"; }
         { name = "zsh-users/zsh-autosuggestions"; }
         { name = "agkozak/zsh-z"; }
