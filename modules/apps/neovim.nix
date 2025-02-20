@@ -14,7 +14,6 @@
       vimPlugins.vim-fugitive
       vimPlugins.fzf-vim
       vimPlugins.syntastic
-      vimPlugins.coc-python
       vimPlugins.coc-nvim
       vimPlugins.coc-yaml
       vimPlugins.coc-json
@@ -166,7 +165,6 @@
       set showcmd
       set visualbell
       set noerrorbells
-      set printoptions=paper:letter
       set spelllang=en_us
       set cursorline
       

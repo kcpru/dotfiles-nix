@@ -3,13 +3,13 @@
 {
   programs.zsh = {
     enable = true;
-    enableAutosuggestions = true;
-    enableSyntaxHighlighting = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
     shellAliases = {
       # nix
       update = "sudo nixos-rebuild switch";
 
-      # exa
+      # eza
       ls = "exa"; # ls
       l = "exa -lbF --git"; # list, size, type, git
       ll = "exa -lbGF --git"; # long list
